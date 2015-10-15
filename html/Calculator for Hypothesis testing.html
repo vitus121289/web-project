@@ -1,0 +1,114 @@
+<<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+
+	<title>Calculator for Hypothesis testing</title>
+
+	<style type="text/css">
+
+		body {
+			background: #555;
+			color: white;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<div class="navBar">
+
+		<span class="logo">CfHT</span>
+
+		<ul id="calcs">
+
+			<li class="sampleSize" id="smlScaleTesting">
+
+				<a href="#">Small scale testing</a>
+
+				<ul>
+
+					<li><a href="#" class="testType" value="0000">Testing population means</a></li>
+					<li><a href="#" class="testType" value="0001">Inferences about the difference between two samples: Independent samples</a></li>
+					<li><a href="#" class="testType" value="0010">Inferences about the difference between two samples: Paired</a></li>
+					<li><a href="#" class="testType" value="0011">Testing significance of r</a></li>
+				
+				</ul>
+
+			</li>
+				
+			<li class="sampleSize" id="lrgScaleTesting">
+
+				<a href="#">Large scale testing</a>
+
+				<ul>
+
+					<li><a href="#" class="testType" value="0100">Testing population means</a></li>
+					<li><a href="#" class="testType" value="0101">Comparing two population means</a></li>
+					<li><a href="#" class="testType" value="0110">Testing a population proportion</a></li>
+					<li><a href="#" class="testType" value="0111">Comparing two population proportion</a></li>
+
+				</ul>
+
+			</li>
+
+		</ul>
+
+	</div>
+
+	<div class="matrix lvlOfSig">
+
+		<table>
+
+			<tr>
+				Critical values of Z at varying levels of significance
+			</tr>
+
+			<tr>
+				<td>level of significance</td>
+				<td>10%</td>
+				<td>5%</td>
+				<td>2.5%</td>
+				<td>1%</td>
+			</tr>
+
+			<tr>
+				<td>H<sub>A</sub>&nbsp;>&nbsp;or&nbsp;<</td>
+				<td><button>+/- 1.28</button></td>
+				<td><button>+/- 1.645</button></td>
+				<td><button>+/- 1.96</button></td>
+				<td><button>+/- 2.33</button></td>
+			</tr>
+
+			<tr>
+				<td>H<sub>A</sub>&nbsp;!=</td>
+				<td><button>+/- 1.645</button></td>
+				<td><button>+/- 1.96</button></td>
+				<td><button>+/- 2.33</button></td>
+				<td><button>+/- 2.58</button></td>
+			</tr>
+
+		</table>
+
+	</div>
+
+	<div class="steps">
+		<div id="step1"></div>
+		<div id="step2"></div>
+		<div id="step3"></div>
+		<div id="step4"></div>
+		<div id="step5"></div>
+	</div>
+
+</body>
+
+<footer></footer>
+
+<script src="../scripts/CfHT.js"></script>
+
+</html>
